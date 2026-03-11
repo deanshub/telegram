@@ -81,6 +81,14 @@ tgbot get-me | jq .username
 | `forward` | Forward a message |
 | `delete` | Delete a message |
 
+## Agent Skill
+
+Install as a [Claude Code skill](https://skills.sh):
+
+```sh
+skills add deanshub/telegram -g
+```
+
 ## Build targets
 
 ```sh
