@@ -24,6 +24,7 @@ make build-small
 |---|---|
 | `TELEGRAM_BOT_TOKEN` | Bot token (or use `--token` flag) |
 | `TELEGRAM_CHAT_ID` | Default chat ID (or use `--chat-id` flag) |
+| `TELEGRAM_ALLOWED_USER_IDS` | Comma-separated user IDs to filter updates (falls back to `TELEGRAM_CHAT_ID`) |
 
 ## Usage
 
@@ -75,7 +76,7 @@ tgbot get-me | jq .username
 | `get-me` | Get bot info |
 | `send` | Send a text message |
 | `media` | Send a photo, document, video, or audio |
-| `updates` | Get updates or long-poll with `--poll` |
+| `updates` | Get updates or long-poll with `--poll` and `--allowed-ids` filter |
 | `chat` | Get chat info |
 | `location` | Send a location |
 | `forward` | Forward a message |

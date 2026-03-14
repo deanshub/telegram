@@ -30,9 +30,12 @@ To send a GIF, use `--type video` with a `.gif` file. Optional: `--caption`, `--
 
 ```bash
 tgbot updates
+tgbot updates --allowed-ids 123,456
 ```
 
 Returns a JSON array of update objects. Each contains `update_id`, `message.text`, `message.from`, and `message.chat.id`.
+
+Filter updates by user ID with `--allowed-ids` flag or `TELEGRAM_ALLOWED_USER_IDS` env var (comma-separated). Falls back to `TELEGRAM_CHAT_ID` if neither is set.
 
 ### Send a location
 
